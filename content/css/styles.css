@@ -1,0 +1,97 @@
+header {
+    background: url('../img/banner1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Mobile styles */
+#navbar {
+    padding: 0rem 0rem !important;
+    height: 75px !important;
+}
+
+#navbar .navbar-brand {
+    margin: 0 auto !important;
+}
+
+#navbar .navbar-toggler {
+    border: 0ch;
+    color: rgba(0,0,0,.5) !important;
+    margin-right: 1em !important;
+}
+
+#logo {
+    width: 200px !important;
+}
+
+#navbar ul.nav, #mobileOptions ul {
+    font-size: 20px !important;
+}
+
+#mobileOptions ul li {
+    padding: 15px !important;
+    border-bottom: 1px solid rgb(211, 211, 211) !important;
+}
+
+.jumbotron ul {
+    list-style: none !important;
+}
+
+.dade-content {
+    max-width: 1000px !important;
+    margin: 0 auto !important;
+}
+
+.y-sec {
+    padding-top: 8em !important;
+    padding-bottom: 8em !important;
+}
+
+#wpBuildingComponents { position: relative; }
+
+#wpBuildingComponents::before {
+    background: url('../img/building-components.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: .4;
+}
+
+/* Tablet Portrait */
+@media (min-width: 576px) {
+    #navbar .navbar-brand {
+        margin: 0px 0px 0px 2em !important;
+    }
+
+    #largeOptions {
+        margin: 0px 2em 0em 0px !important;
+    }
+
+    #navbar ul.nav, #mobileOptions ul {
+        font-size: 15px !important;
+    }
+}
+
+/* Tablet landscape & netbooks */
+@media (min-width: 768px) {
+
+}
+
+/* Small laptop */
+@media (min-width: 992px) {
+
+}
+
+/* Medium laptops */
+@media (min-width: 1201px) {
+
+}
+
+/* Large screens */
+@media (min-width: 1600px) {
+
+}
