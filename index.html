@@ -11,8 +11,9 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="content/lib/fontawesome/css/all.min.css">
 
-    <!-- Slick -->
-    <link rel="stylesheet" href="content/lib/slick.css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="content/lib/owl.carousel.min.css">
+    <link rel="stylesheet" href="content/lib/owl.theme.default.min.css">
 
     <!-- Animations -->
     <link rel="stylesheet" href="content/lib/animate.css">
@@ -25,8 +26,15 @@
 <body>
     <!-- Header -->
     <header>
+        <!-- Slick Carrusel -->
+        <div class="owl-carousel" style="height: 100vh">
+            <div id="elem1" class="carouselItem"></div>
+            <div id="elem2" class="carouselItem"></div>
+            <div id="elem3" class="carouselItem"></div>
+        </div>
+
         <!-- Navbar -->
-        <div id="navbar" class="navbar navbar-light bg-light d-flex justify-content-between">
+        <div id="navbar" class="navbar navbar-light bg-light d-flex justify-content-between position-fixed" style="z-index: 200">
             <!-- Logo -->
             <a class="navbar-brand" href="#"><img id="logo" src="content/img/logo.png" alt=""></a>
 
@@ -61,7 +69,7 @@
         </div>
     
         <!-- Mobile menu -->
-        <div class="collapse navbar-collapse bg-light text-secondary text-center" id="mobileOptions">
+        <div class="collapse navbar-collapse bg-light text-secondary text-center position-fixed" style="z-index: 200; width: 100%" id="mobileOptions">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link text-secondary" href="#">Home <span class="sr-only">(current)</span></a>
@@ -83,12 +91,6 @@
                 </li>
             </ul>
         </div>
-
-        <!-- Slick Carrusel -->
-        <!-- <div class="carrusel">
-            <div id="element1" class="carruselElement"></div>
-            <div id="element2"></div>
-        </div> -->
     </header>
 
     <!-- Separator -->
@@ -265,7 +267,7 @@
     <script src="content/lib/jquery-3.3.1.slim.min.js"></script>
     <script src="content/lib/popper.min.js"></script>
     <script src="content/lib/bootstrap.min.js"></script>
-    <script src="content/lib/slick.min.js"></script>
+    <script src="content/lib/owl.carousel.min.js"></script>
     <script src="content/lib/noframework.waypoints.js"></script>
     <script src="content/lib/validate.js"></script>
     <script src="content/js/web.js"></script>

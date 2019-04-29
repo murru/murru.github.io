@@ -2,8 +2,14 @@ var web = {
     init() {
         this.cacheDom();
         this.setHeight();
-        //this.bindEvents();
         this.setWaypoints();
+
+        // We start the carousel.
+        $('.owl-carousel').owlCarousel({
+            items: 1,
+            loop: true,
+            autoplay: true
+        });
     },
     cacheDom() {
         this.$el = document.querySelector('body');

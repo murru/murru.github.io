@@ -1,7 +1,21 @@
-header {
+/* header {
     background: url('../img/banner1.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+} */
+
+.carouselItem {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    height: 100vh !important;
+}
+
+#elem1 { background-image: url('../img/owl1.jpeg') !important; }
+#elem2 { background-image: url('../img/owl2.jpeg') !important; }
+#elem3 { background-image: url('../img/owl3.jpeg') !important; }
+
+#elem1, #elem2, #elem3 {
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: 50% 20% !important;
 }
 
 /* #element1 { background: url('../img/banner1.jpg'); } */
@@ -20,7 +34,12 @@ header {
 #navbar {
     padding: 0rem 0rem !important;
     height: 75px !important;
+    width: 100% !important;
+    background-color: #ffffff !important;
+    top: 0 !important;
 }
+
+#mobileOptions { top: 75px !important; }
 
 #navbar .navbar-brand {
     margin: 0 auto !important;
@@ -71,10 +90,12 @@ header {
     height: 100%;
     width: 100%;
     opacity: .4;
+    z-index: -250 !important;
 }
 
 /* Tablet Portrait */
 @media (min-width: 576px) {
+    /* #navbar { background-color: #ffffff !important; } */
     #navbar .navbar-brand {
         margin: 0px 0px 0px 2em !important;
     }
@@ -90,20 +111,21 @@ header {
 
 /* Tablet landscape & netbooks */
 @media (min-width: 768px) {
+    /* #navbar { background-color: #ffffff !important; } */
 
 }
 
 /* Small laptop */
 @media (min-width: 992px) {
-
+    /* #navbar { background-color: transparent !important; } */
 }
 
 /* Medium laptops */
 @media (min-width: 1201px) {
-
+    /* #navbar { background-color: transparent !important; } */
 }
 
 /* Large screens */
 @media (min-width: 1600px) {
-
+    /* #navbar { background-color: transparent !important; } */
 }
