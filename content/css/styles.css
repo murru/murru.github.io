@@ -4,6 +4,18 @@ header {
     background-repeat: no-repeat;
 }
 
+/* #element1 { background: url('../img/banner1.jpg'); } */
+/* #element2 { background: url('../img/banner1.jpg'); } */
+
+/* .carruselElement {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 20%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+} */
+
 /* Mobile styles */
 #navbar {
     padding: 0rem 0rem !important;
