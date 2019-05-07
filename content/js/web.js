@@ -1,7 +1,7 @@
 var web = {
     init() {
         this.cacheDom();
-        this.setHeight();
+        // this.setHeight();
         this.setWaypoints();
 
         // We start the carousel.

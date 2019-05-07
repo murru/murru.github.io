@@ -26,15 +26,8 @@
 <body>
     <!-- Header -->
     <header>
-        <!-- Slick Carrusel -->
-        <div class="owl-carousel" style="height: 100vh">
-            <div id="elem1" class="carouselItem"></div>
-            <div id="elem2" class="carouselItem"></div>
-            <div id="elem3" class="carouselItem"></div>
-        </div>
-
         <!-- Navbar -->
-        <div id="navbar" class="navbar navbar-light bg-light d-flex justify-content-between position-fixed" style="z-index: 200">
+        <nav id="navbar" class="navbar navbar-light bg-light d-flex justify-content-between position-fixed" style="z-index: 200">
             <!-- Logo -->
             <a class="navbar-brand" href="#"><img id="logo" src="content/img/logo.png" alt=""></a>
 
@@ -66,10 +59,10 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </nav>
     
         <!-- Mobile menu -->
-        <div class="collapse navbar-collapse bg-light text-secondary text-center position-fixed" style="z-index: 200; width: 100%" id="mobileOptions">
+        <nav class="collapse navbar-collapse bg-light text-secondary text-center position-fixed" style="z-index: 200; width: 100%" id="mobileOptions">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link text-secondary" href="#">Home <span class="sr-only">(current)</span></a>
@@ -90,8 +83,17 @@
                     <a class="nav-link text-secondary" href="#">Contact Us</a>
                 </li>
             </ul>
-        </div>
+        </nav>
     </header>
+
+    <!-- Slick Carrusel -->
+    <section class="hero" style="height: 80vh">
+        <div class="owl-carousel">
+            <div id="elem1" class="carouselItem"></div>
+            <div id="elem2" class="carouselItem"></div>
+            <div id="elem3" class="carouselItem"></div>
+        </div>
+    </section>
 
     <!-- Separator -->
     <div class="row no-gutters" style="background-color: #0084C2; height: 50px"></div>
