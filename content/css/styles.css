@@ -21,7 +21,7 @@
 /* Mobile styles */
 #navbar {
     padding: 0rem 0rem !important;
-    height: 75px !important;
+    height: 100px !important;
     width: 100% !important;
     background-color: #ffffff !important;
     top: 0 !important;
@@ -40,7 +40,7 @@
 }
 
 #logo {
-    width: 200px !important;
+    width: 250px !important;
 }
 
 #navbar ul.nav, #mobileOptions ul {
