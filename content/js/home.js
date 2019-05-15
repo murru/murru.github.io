@@ -61,5 +61,14 @@ var home = {
             },
             offset: '40%'
         });
+
+        var waypoint = new Waypoint({
+            element: this.$wpBuildingComponents.querySelector('#groupPartners'),
+            handler: function() {
+                this.element.classList.remove('invisible');
+                this.element.classList.add('slideInUp');
+            },
+            offset: '60%'
+        });
     }
 }

@@ -1,25 +1,22 @@
 var navbar = {
-    Height: null, // The navbar height.
-    lastScrollTop: 0,
-    init: function() {
+    init() {
+
+        // We cache the dom.
         this.cacheDom();
 
+        // We bind the events.
         this.bindEvents();
     },
-    cacheDom: function() {
-        this.$el = web.$el.querySelector('#navBar'); // The navbar section.
 
-        // this.$mobileOptions = this.$header.querySelector('#mobileOptions');
+    cacheDom() {
 
-        this.$jsOptionMenu = this.$el.querySelectorAll('.jsOptionMenu'); // The a links to render all the views of the site.
+        // The principal element of this module.
+        this.$el = web.$navs;
 
-        //this.$hamburguerBtn = this.$el.querySelector('#hamburguerBtn'); // The toggler to hide/show options in smartphones & tablets.
-
-        //this.$options = this.$el.querySelector('#options'); // menu options div
-
-        //this.$dropDowns = this.$options.querySelectorAll('.w3-dropdown-content'); // Dropdown options from the menu options
+        // The menu options.
+        this.$jsOptionMenu = this.$el.querySelectorAll('.jsOptionMenu');
     },
-    
+
     bindEvents: function() {
         // Toggler of the navbar options when viewed from small screens.
         //this.$hamburguerBtn.addEventListener('click', () => { navbar.toggleNav(); });
@@ -37,13 +34,6 @@ var navbar = {
 
         //     this.lastScrollTop = st <= 0 ? 0 : st; // For Mobile or negative scrolling
         // }, false);
-    },
-
-    // Method that hides/shows the navbar in tablets & smartphones.
-    toggleNav: function() {
-        // if(id != 'isotype' && id != 'logo') {
-            (this.$options.classList.contains('w3-hide-small')) ? this.$options.classList.remove('w3-hide-small') : this.$options.classList.add('w3-hide-small');
-        // }
     },
 
     // Method that changes the url according to the view that's being watched at the moment.

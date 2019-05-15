@@ -24,55 +24,54 @@
     <title>DADE Truss Company</title>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <!-- Navbar -->
+    <!-- Navbar -->
+    <div id="navs">
         <nav id="navbar" class="navbar navbar-light bg-light d-flex justify-content-between position-fixed" style="z-index: 200">
             <!-- Logo -->
-            <a class="navbar-brand jsOptionMenu" href="#home"><img id="logo" src="content/img/logo.png" alt=""></a>
-
+            <a href="#home" class="navbar-brand jsOptionMenu"><img id="logo" src="content/img/logo.png" alt=""></a>
+    
             <!-- Mobile options button toggler -->
             <button class="navbar-toggler d-block d-lg-none" type="button" data-toggle="collapse" data-target="#mobileOptions" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+    
             <!-- Large screen options -->
             <div id="largeOptions" class="d-none d-lg-block">
                 <ul class="nav">
                     <li class="nav-item active">
-                        <a class="nav-link jsOptionMenu" href="#home">Home <span class="sr-only">(current)</span></a>
+                        <a href="#home" class="nav-link jsOptionMenu">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link jsOptionMenu" href="#services">Services</a>
+                        <a href="#services" class="nav-link jsOptionMenu">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link jsOptionMenu" href="#products">Products</a>
+                        <a href="#products" class="nav-link jsOptionMenu">Products</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link jsOptionMenu" href="#contactUs">Contact Us</a>
+                        <a href="#contactUs" class="nav-link jsOptionMenu">Contact Us</a>
                     </li>
                 </ul>
             </div>
         </nav>
-    
+        
         <!-- Mobile menu -->
         <nav class="collapse navbar-collapse bg-light text-secondary text-center position-fixed" style="z-index: 200; width: 100%" id="mobileOptions">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link text-secondary jsOptionMenu" href="#home">Home <span class="sr-only">(current)</span></a>
+                    <a href="#home" class="nav-link text-secondary jsOptionMenu">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-secondary jsOptionMenu" href="#services">Services</a>
+                    <a href="#services" class="nav-link text-secondary jsOptionMenu">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-secondary jsOptionMenu" href="#products">Products</a>
+                    <a href="#products" class="nav-link text-secondary jsOptionMenu">Products</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-secondary jsOptionMenu" href="#contactUs">Contact Us</a>
+                    <a href="#contactUs" class="nav-link text-secondary jsOptionMenu">Contact Us</a>
                 </li>
             </ul>
         </nav>
-    </header>
+    </div>
 
     <!-- Load View Section -->
     <!-- <section id="content" style="margin: 0 auto; max-width: 1600px;"></section> -->
@@ -165,9 +164,12 @@
     <script src="content/lib/owl.carousel.min.js"></script>
     <script src="content/lib/noframework.waypoints.js"></script>
     <script src="content/lib/validate.js"></script>
+
+    <!-- Modules -->
     <script src="content/js/web.js"></script>
     <script src="content/js/navbar.js"></script>
     <script src="content/js/home.js"></script>
+    <script src="content/js/services.js"></script>
     <script src="content/js/alert.js"></script>
     <script src="content/js/contact.js"></script>
 </body>

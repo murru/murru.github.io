@@ -1,21 +1,31 @@
 var web = {
     init() {
+
+        // We cache the dom.
         this.cacheDom();
 
         // We load the specified view.
         this.setHash();
 
+        // Footer Waypoints.
         this.setWaypoints();
-
     },
     cacheDom() {
-        this.$el = document.querySelector('body'); // The parent elemento of this module.        
+
+        // Document body tag. The principal element of this module.
+        this.$el = document.querySelector('body');
+
+        // Navbar
+        this.$navs = this.$el.querySelector('#navs');
+
+        // Load view container.
         this.$content = this.$el.querySelector('#content'); // The content section to load the views. 
 
+        // Footer section
         this.$wpFooter = this.$el.querySelector('#wpFooter');
     },
 
-    setWaypoints() {
+    setWaypoints: function() {
 
         // Footer animations
         var waypoint = new Waypoint({
@@ -54,7 +64,7 @@ var web = {
             offset: '100%'
         });
     },
-    
+
     setHash: function() {
         let key = window.location.hash;
 
@@ -88,7 +98,7 @@ var web = {
 
             switch(hash) {
                 case '#home': home.init(); break;
-                case '#services': break;
+                case '#services': services.init(); break;
                 case '#products': break;
                 case '#contactUs': break;
             }
