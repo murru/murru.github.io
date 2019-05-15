@@ -29,7 +29,7 @@
         <!-- Navbar -->
         <nav id="navbar" class="navbar navbar-light bg-light d-flex justify-content-between position-fixed" style="z-index: 200">
             <!-- Logo -->
-            <a class="navbar-brand" href="#"><img id="logo" src="content/img/logo.png" alt=""></a>
+            <a class="navbar-brand jsOptionMenu" href="#home"><img id="logo" src="content/img/logo.png" alt=""></a>
 
             <!-- Mobile options button toggler -->
             <button class="navbar-toggler d-block d-lg-none" type="button" data-toggle="collapse" data-target="#mobileOptions" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,16 +40,16 @@
             <div id="largeOptions" class="d-none d-lg-block">
                 <ul class="nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link jsOptionMenu" href="#home">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link jsOptionMenu" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Products</a>
+                        <a class="nav-link jsOptionMenu" href="#products">Products</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
+                        <a class="nav-link jsOptionMenu" href="#contactUs">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -59,126 +59,25 @@
         <nav class="collapse navbar-collapse bg-light text-secondary text-center position-fixed" style="z-index: 200; width: 100%" id="mobileOptions">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link text-secondary" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link text-secondary jsOptionMenu" href="#home">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-secondary" href="#">Services</a>
+                    <a class="nav-link text-secondary jsOptionMenu" href="#services">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-secondary" href="#">Products</a>
+                    <a class="nav-link text-secondary jsOptionMenu" href="#products">Products</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-secondary" href="#">News / Updates</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-secondary" href="#">Employment</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-secondary" href="#">Contact Us</a>
+                    <a class="nav-link text-secondary jsOptionMenu" href="#contactUs">Contact Us</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <!-- Slick Carrusel -->
-    <section class="hero" style="height: 80vh">
-        <div class="owl-carousel">
-            <div id="elem1" class="carouselItem"></div>
-            <div id="elem2" class="carouselItem"></div>
-            <div id="elem3" class="carouselItem"></div>
-        </div>
-    </section>
-
-    <!-- Separator -->
-    <div class="row no-gutters" style="background-color: #0084C2; height: 50px"></div>
-
-    <!-- Company Profile -->
-    <div id="wpCompanyProfile" class="container-fluid dade-content y-sec px-5">
-        <div class="row align-items-center no-gutters">
-            <div class="col-sm-12 col-md-7 col-lg-8">
-                <article class="text-center mb-5">
-                    <h1 id="title" class="display-4 animated invisible">Company Profile</h1>
-                </article>
-                <article id="leftText" class="text-justify animated invisible">
-                    <p>Since 1978, the companies affiliated with Building Components Group, Inc. have supplied prefabricated wood trusses, metal trusses, stairs and railings to the Florida construction trade. During those years, our success as innovators, commitment to quality, competitive prices and a proactive approach to service have made us a leader in the industry. </p>
-                    <p>The most modern technology available, as well as manufacturing facilities in Miami, Ft. Myers and Orlando-Sanford, give us a large production capability and the ability to meet the most stringent delivery schedules. You are assured of obtaining a product of the highest quality, strength and durability, engineered and manufactured for faster and efficient installation.</p>
-                </article>
-            </div>
-            <div class="col-sm-12 col-md-5 col-lg-4 text-center" style="overflow: hidden">
-                <img src="content/img/dade.png" alt="DADE Logo" style="width: 100%;" id="rightImg" class="animated invisible">
-            </div>
-        </div>
-    </div>
-
-    <!-- Separator -->
-    <div class="row no-gutters" style="background-color: #0084C2; height: 50px"></div>
-
-    <!-- Partners -->
-    <div id="wpPartners" style="background-color: #54575A">
-            <div class="dade-content y-sec px-5">
-                <article class="text-center text-white mb-5">
-                    <h1 id="title" class="display-4 animated invisible">Partners</h1>
-                </article>
-                <div id="balls" class="row align-items-center no-gutters mb-5 animated invisible">
-                    <div class="col-sm-12 col-md-6 col-lg-3 text-center">
-                        <img src="content/img/compa01.png" alt="DADE Logo" style="width: 80%;">
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 text-center">
-                        <img src="content/img/compa02.png" alt="DADE Logo" style="width: 80%;">
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 text-center">
-                        <img src="content/img/compa03.png" alt="DADE Logo" style="width: 80%;">
-                    </div>
-                    <div class="col-sm-12 col-md-6 col-lg-3 text-center">
-                        <img src="content/img/compa04.png" alt="DADE Logo" style="width: 80%;">
-                    </div>
-                </div>
-                <div class="row p-3">
-                    <p id="text" class="lead text-white animated invisible">We count with the best partners! Each one of them suits your relationed needs. We trust them our clients! Start now and get the best from the bests!</p>
-                </div>
-            </div>
-    </div>
-
-    <!-- Separator -->
-    <div class="row no-gutters" style="background-color: #0084C2; height: 50px"></div>
-
-    <!-- Building Components -->
-    <div id="wpBuildingComponents" class="jumbotron no-gutters p-0 mb-0">
-        <div class="dade-content y-sec px-5">
-            <article id="title" class="animated invisible">
-                <h1 class="display-4">Our Experience</h1>
-                <p class="lead">The Building Components Group Advantage</p>
-                <hr class="my-4">
-            </article>
-            <div class="row no-gutters">
-                <div class="col-sm-12 col-md-6 col-lg-6">
-                    <article id="textLeft" class="text-justify animated invisible">
-                        <p>Our experienced and responsive team of professionals are motivated toward one simple goal  a satisfied and valued customer.</p>
-            
-                        <p>From the planning stage to completion, Building Components Group works closely with you to ensure your project comes together as originally envisioned.</p>
-            
-                        <p>We are committed to pricing it competitively, designing it right, building it with quality and delivering it on time.</p>
-                        
-                        <p>We know that Building Components Group is not the only company you have to choose from. But when you consider our competitive prices, our excellent lead-time, and our superior service, we are proud to know that we are the best company you have available.</p>
-                    </article>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-6" style="overflow: hidden">
-                    <article id="textRight" class="animated invisible">
-                        <ul>
-                            <li><span class="mr-2"><i class="fas fa-check"></i></span>Quality products achieved through superior design, workmanship, materials and a commitment to a team approach.</li> 
-                            <li><span class="mr-2"><i class="fas fa-check"></i></span>Competent and reliable employees are available to answer your questions and discuss your concerns. </li> 
-                            <li><span class="mr-2"><i class="fas fa-check"></i></span>Modern fabrication equipment and a highly skilled workforce produce accurate components that fit right the first time.</li> 
-                            <li><span class="mr-2"><i class="fas fa-check"></i></span>State-of-the-art engineering software and technology -- from the design stage to manufacturing operations -- mean faster turn-around, value pricing and quality products.</li> 
-                            <li><span class="mr-2"><i class="fas fa-check"></i></span>Our in-house repair department will ensure that your project moves forward with rapid repair and engineering support.</li> 
-                        </ul>
-                    </article>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Separator -->
-    <div class="row no-gutters" style="background-color: #0084C2; height: 50px"></div>
+    <!-- Load View Section -->
+    <!-- <section id="content" style="margin: 0 auto; max-width: 1600px;"></section> -->
+    <section id="content"></section>
+    <!-- Load View Section -->
 
     <!-- Footer -->
     <div id="wpFooter" style="background-color: #0084C2">
@@ -267,6 +166,8 @@
     <script src="content/lib/noframework.waypoints.js"></script>
     <script src="content/lib/validate.js"></script>
     <script src="content/js/web.js"></script>
+    <script src="content/js/navbar.js"></script>
+    <script src="content/js/home.js"></script>
     <script src="content/js/alert.js"></script>
     <script src="content/js/contact.js"></script>
 </body>

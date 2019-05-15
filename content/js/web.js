@@ -1,74 +1,21 @@
 var web = {
     init() {
         this.cacheDom();
-        // this.setHeight();
+
+        // We load the specified view.
+        this.setHash();
+
         this.setWaypoints();
 
-        // We start the carousel.
-        $('.owl-carousel').owlCarousel({
-            items: 1,
-            loop: true,
-            autoplay: true
-        });
     },
     cacheDom() {
-        this.$el = document.querySelector('body');
-        this.$header = document.querySelector('header');
-        this.$navbar = this.$header.querySelector('#navbar');
-        this.$mobileOptions = this.$header.querySelector('#mobileOptions');
-        // Waypoints sections.
-        this.$wpCompanyProfile = this.$el.querySelector('#wpCompanyProfile');
-        this.$wpPartners = this.$el.querySelector('#wpPartners');
-        this.$wpBuildingComponents = this.$el.querySelector('#wpBuildingComponents');
+        this.$el = document.querySelector('body'); // The parent elemento of this module.        
+        this.$content = this.$el.querySelector('#content'); // The content section to load the views. 
+
         this.$wpFooter = this.$el.querySelector('#wpFooter');
+    },
 
-    },
-    setHeight() {
-        this.$header.style.height = window.innerHeight + 'px';
-        this.$mobileOptions.style.height = (window.innerHeight - this.$navbar.clientHeight) + 'px';
-    },
     setWaypoints() {
-        // Company Profile animations.
-        var waypoint = new Waypoint({ element: this.$wpCompanyProfile.querySelector('#title'), handler: function() { this.element.classList.remove('invisible');this.element.classList.add('fadeInDown'); }, offset: '80%'});
-
-        var waypoint = new Waypoint({ element: this.$wpCompanyProfile.querySelector('#leftText'), handler: function() { this.element.classList.remove('invisible'); this.element.classList.add('fadeInLeft'); }, offset: '75%'});
-
-        var waypoint = new Waypoint({ element: this.$wpCompanyProfile.querySelector('#rightImg'), handler: function() { this.element.classList.remove('invisible');this.element.classList.add('fadeInRight'); }, offset: '70%'});
-        
-        // Partners animations
-        var waypoint = new Waypoint({ element: this.$wpPartners.querySelector('#title'), handler: function() { this.element.classList.remove('invisible'); this.element.classList.add('fadeInUp'); }, offset: '70%'});
-        
-        var waypoint = new Waypoint({ element: this.$wpPartners.querySelector('#balls'), handler: function() { this.element.classList.remove('invisible'); this.element.classList.add('bounceIn'); }, offset: '60%'});
-        
-        var waypoint = new Waypoint({ element: this.$wpPartners.querySelector('#text'), handler: function() { this.element.classList.remove('invisible'); this.element.classList.add('fadeInDown'); }, offset: '60%'});
-        
-        // Building Components animations.
-        var waypoint = new Waypoint({
-            element: this.$wpBuildingComponents.querySelector('#title'),
-            handler: function() {
-                this.element.classList.remove('invisible');
-                this.element.classList.add('zoomIn');
-            },
-            offset: '60%'
-        });
-        
-        var waypoint = new Waypoint({
-            element: this.$wpBuildingComponents.querySelector('#textLeft'),
-            handler: function() {
-                this.element.classList.remove('invisible');
-                this.element.classList.add('slideInLeft');
-            },
-            offset: '40%'
-        });
-
-        var waypoint = new Waypoint({
-            element: this.$wpBuildingComponents.querySelector('#textRight'),
-            handler: function() {
-                this.element.classList.remove('invisible');
-                this.element.classList.add('slideInRight');
-            },
-            offset: '40%'
-        });
 
         // Footer animations
         var waypoint = new Waypoint({
@@ -106,6 +53,48 @@ var web = {
             },
             offset: '100%'
         });
+    },
+    
+    setHash: function() {
+        let key = window.location.hash;
+
+        if(key == '') {
+            key = '#home';
+            window.location.hash = key;
+        }
+
+        // We load the view
+        this.loadView(key);
+    },
+
+    getHash: function() { return window.location.hash; },
+
+    loadView: function(hash) {
+        let req = new XMLHttpRequest();
+        let view = 'views/';
+        method = 'GET';
+
+        switch(hash) {
+            case '#home': view += 'home.html'; break;
+            case '#services': view += 'services.html'; break;
+            case '#products': view += 'products.html'; break;
+            case '#contactUs': view += 'contact-us.html'; break;
+        }
+
+        req.open(method, view, true);
+
+        req.onload = function() {
+            web.$content.innerHTML = this.responseText;
+
+            switch(hash) {
+                case '#home': home.init(); break;
+                case '#services': break;
+                case '#products': break;
+                case '#contactUs': break;
+            }
+        }
+
+        req.send();
     }
 }
 
