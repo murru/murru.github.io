@@ -40,7 +40,7 @@
 }
 
 #logo {
-    width: 250px !important;
+    width: 200px !important;
 }
 
 #navbar ul.nav, #mobileOptions ul {
@@ -99,20 +99,31 @@
 /* Tablet landscape & netbooks */
 @media (min-width: 768px) {
     /* #navbar { background-color: #ffffff !important; } */
-
+    #logo {
+        width: 250px !important;
+    }
 }
 
 /* Small laptop */
 @media (min-width: 992px) {
     /* #navbar { background-color: transparent !important; } */
+    #logo {
+        width: 250px !important;
+    }
 }
 
 /* Medium laptops */
 @media (min-width: 1201px) {
     /* #navbar { background-color: transparent !important; } */
+    #logo {
+        width: 250px !important;
+    }
 }
 
 /* Large screens */
 @media (min-width: 1600px) {
     /* #navbar { background-color: transparent !important; } */
+    #logo {
+        width: 250px !important;
+    }
 }
