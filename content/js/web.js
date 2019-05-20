@@ -99,7 +99,7 @@ var web = {
             switch(hash) {
                 case '#home': home.init(); break;
                 case '#services': services.init(); break;
-                case '#products': break;
+                case '#products': products.init(); break;
                 case '#contactUs': break;
             }
         }

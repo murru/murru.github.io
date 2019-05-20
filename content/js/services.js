@@ -63,7 +63,7 @@ var services = {
     },
     cacheDom() {
 
-        // The parent elemento of this module.
+        // The parent element of this module.
         this.$el = web.$content;
 
         // The buttons to show the service full information.

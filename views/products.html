@@ -106,6 +106,8 @@
                     </div>
 
                     <!-- Gallery -->
+
+                    <!-- Tittle -->
                     <div class="row mt-1">
                         <div class="col">
                             <article class="text-center">
@@ -114,67 +116,68 @@
                         </div>
                     </div>
                     
+                    <!-- Image cards -->
                     <div class="row mt-1">
                         <div class="col">
                             <div class="card-columns">
                                 <div class="card text-white">
-                                    <img src="content/img/gal1t.jpg" class="card-img" alt="...">
+                                    <img id="1" src="content/img/gal1t.jpg" class="card-img jsImgThumb" data-toggle="modal" data-target="#modal" alt="...">
                                     <!-- <div class="card-img-overlay">
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                         <p class="card-text">Last updated 3 mins ago</p>
                                     </div> -->
                                 </div>
-                                <div class="card bg-dark text-white">
-                                    <img src="content/img/gal2t.jpg" class="card-img" alt="...">
+                                <div class="card text-white">
+                                    <img id="2" src="content/img/gal2t.jpg" class="card-img jsImgThumb" data-toggle="modal" data-target="#modal" alt="...">
                                     <!-- <div class="card-img-overlay">
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                         <p class="card-text">Last updated 3 mins ago</p>
                                     </div> -->
                                 </div>
-                                <div class="card bg-dark text-white">
-                                    <img src="content/img/gal3t.jpg" class="card-img" alt="...">
+                                <div class="card text-white">
+                                    <img id="3" src="content/img/gal3t.jpg" class="card-img jsImgThumb" data-toggle="modal" data-target="#modal" alt="...">
                                     <!-- <div class="card-img-overlay">
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                         <p class="card-text">Last updated 3 mins ago</p>
                                     </div> -->
                                 </div>
-                                <div class="card bg-dark text-white">
-                                    <img src="content/img/gal4t.jpg" class="card-img" alt="...">
+                                <div class="card text-white">
+                                    <img id="4" src="content/img/gal4t.jpg" class="card-img jsImgThumb" data-toggle="modal" data-target="#modal" alt="...">
                                     <!-- <div class="card-img-overlay">
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                         <p class="card-text">Last updated 3 mins ago</p>
                                     </div> -->
                                 </div>
-                                <div class="card bg-dark text-white">
-                                    <img src="content/img/gal5t.jpg" class="card-img" alt="...">
+                                <div class="card text-white">
+                                    <img id="5" src="content/img/gal5t.jpg" class="card-img jsImgThumb" data-toggle="modal" data-target="#modal" alt="...">
                                     <!-- <div class="card-img-overlay">
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                         <p class="card-text">Last updated 3 mins ago</p>
                                     </div> -->
                                 </div>
-                                <div class="card bg-dark text-white">
-                                    <img src="content/img/gal6t.jpg" class="card-img" alt="...">
+                                <div class="card text-white">
+                                    <img id="6" src="content/img/gal6t.jpg" class="card-img jsImgThumb" data-toggle="modal" data-target="#modal" alt="...">
                                     <!-- <div class="card-img-overlay">
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                         <p class="card-text">Last updated 3 mins ago</p>
                                     </div> -->
                                 </div>
-                                <div class="card bg-dark text-white">
-                                    <img src="content/img/gal7t.jpg" class="card-img" alt="...">
+                                <div class="card text-white">
+                                    <img id="7" src="content/img/gal7t.jpg" class="card-img jsImgThumb" data-toggle="modal" data-target="#modal" alt="...">
                                     <!-- <div class="card-img-overlay">
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                         <p class="card-text">Last updated 3 mins ago</p>
                                     </div> -->
                                 </div>
-                                <div class="card bg-dark text-white">
-                                    <img src="content/img/gal8t.jpg" class="card-img" alt="...">
+                                <div class="card text-white">
+                                    <img id="8" src="content/img/gal8t.jpg" class="card-img jsImgThumb" data-toggle="modal" data-target="#modal" alt="...">
                                     <!-- <div class="card-img-overlay">
                                         <h5 class="card-title">Card title</h5>
                                         <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -258,6 +261,17 @@
         </div>
 
     </div>
+</div>
+
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button> -->
+
+
+<div id="modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+        <img id="modalImg" style="width: 100%" src="" alt="">
+    </div>
+  </div>
 </div>
 
 <style>
