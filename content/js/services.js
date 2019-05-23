@@ -24,7 +24,7 @@ var services = {
             text: [
                 'Our dedicated management and staff, many with 15 + years professional experience in the industry, work as a coordinated team manufacturing reliable, high-quality roof and floor trusses.',
                 'We begin by using only quality lumber that conforms to strict state, local and national building criteria.  The lumber is cut by machines that are mathematically calibrated and set to produce highly accurate cuts.  The pieces of lumber are then fitted together in jigs, joined by metal connector plates (manufactured by MiTek Industries or Robbins Engineering, Inc.) and pressed on a roller table.  Precision manufacturing guarantees multiples of the same truss that are identical in size, ensuring consistent fit, performance and uniformity throughout your roof or floor system.',
-                'Each truss must pass our stringent Internal Quality Control tests before being qualified to be stamped with our company name.  In addition, Building Components Group participates in a Truss Manufacturing Assurance Program performed by an impartial third party, thereby further assuring quality trusses that comply with the standards of the Florida Building Code.',
+                'Each truss must pass our stringent Internal Quality Control tests before being qualified to be stamped with our company name.  In addition, Dade Truss participates in a Truss Manufacturing Assurance Program performed by an impartial third party, thereby further assuring quality trusses that comply with the standards of the Florida Building Code.',
                 'Our fabricators number the trusses for accurate installation (your delivery pack will include a truss placement drawing) and bands and stages your packages for safe, efficient delivery to your job site.  Shipment is coordinated with your schedule to ensure a smooth workflow.',
                 'Our ability to produce mass quantities  fast and on-time makes you more profitable.',
                 'State of the art facility designed for high volume production.',
@@ -103,11 +103,11 @@ var services = {
             case 2:
 
                 // The first two paragraphs.
-                bodyCode += '<div class="row"><div class="col"><p>' + this.info[index].text[0] + '</p><p>' + this.info[index].text[1] + '</p></div></div><div class="row">';
+                bodyCode += '<div class="row"><div class="col"><p class="text-justify">' + this.info[index].text[0] + '</p><p>' + this.info[index].text[1] + '</p></div></div><div class="row">';
                 
                 // The row.
                 // 1st column.
-                bodyCode += '<div class="col-sm-12 col-md-12 col-lg-6"><p>' + this.info[index].text[2] + '</p><p>' + this.info[index].text[3] + '</p></div>';
+                bodyCode += '<div class="col-sm-12 col-md-12 col-lg-6"><p class="text-justify">' + this.info[index].text[2] + '</p><p>' + this.info[index].text[3] + '</p></div>';
                 
                 // 2nd column.
                 bodyCode += '<div class="col-sm-12 col-md-12 col-lg-6"><ul>';
