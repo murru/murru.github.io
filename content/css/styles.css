@@ -9,9 +9,9 @@
 }
 
 #elem1 { background-image: url('../img/owl1.jpg') !important; }
-#elem2 { background-image: url('../img/owl1.jpeg') !important; }
-#elem3 { background-image: url('../img/owl2.jpeg') !important; }
-#elem4 { background-image: url('../img/owl3.jpeg') !important; }
+#elem2 { background-image: url('../img/owl2.jpeg') !important; }
+#elem3 { background-image: url('../img/owl3.jpeg') !important; }
+#elem4 { background-image: url('../img/owl4.jpeg') !important; }
 
 #elem1, #elem2, #elem3, #elem4 {
     background-size: cover !important;
